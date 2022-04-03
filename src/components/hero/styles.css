@@ -1,0 +1,134 @@
+.hero-parent {
+  height: 88vh;
+  position: relative;
+}
+
+/* Absolute positioned images */
+
+.boxpng {
+  position: absolute;
+  width: 8%;
+  left: 50px;
+  top: 8%;
+}
+
+.ellipsepng {
+  position: absolute;
+  bottom: 20%;
+  width: 13%;
+}
+
+.planetbg {
+  position: absolute;
+  right: 0;
+  top: -70px;
+  width: 46%;
+}
+
+.donutpng {
+  position: absolute;
+  right: 15%;
+  bottom: 30px;
+  width: 6%;
+}
+
+.planetpng {
+  position: absolute;
+  right: 15%;
+  bottom: 52%;
+  width: 10%;
+  z-index: 99;
+}
+
+.vectorpng {
+  position: absolute;
+  right: 22%;
+  top: 29%;
+  width: 35%;
+}
+
+.cometpng {
+  position: absolute;
+  right: 24%;
+  top: 0%;
+  width: 5%;
+}
+
+/* Absolute positioned images */
+
+.hero-container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-text {
+  display: flex;
+  align-items: center;
+  background: #09090957;
+  border-radius: 6px;
+  width: 30%;
+  padding: 10px 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.welcome-text p {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(95.79deg, #2317fa -33.63%, #d529e4 97.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 6px 16px 31px rgba(59, 88, 239, 0.15);
+}
+
+.welcome-header {
+  width: 70%;
+  margin-bottom: 25px;
+}
+
+.welcome-header h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: "Russo One", sans-serif;
+  line-height: 75px;
+}
+
+.welcome-header p {
+  width: 60%;
+  color: #dadada;
+  font-size: 14px;
+  line-height: 33px;
+}
+
+.welcome-btn button {
+  background: linear-gradient(95.48deg, #2317fa -1.25%, #d529e4 97.48%);
+  box-shadow: 6px 16px 31px 8px rgba(59, 88, 239, 0.15);
+  border-radius: 0px;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.welcome-btn button:hover {
+  cursor: pointer;
+}
+
+/* Right section */
+
+.hero-svg {
+  /* background-image: url("../../assets/img/bgplanet.png"); */
+  text-align: left;
+}
+
+.astronaut {
+  position: absolute;
+  width: 35%;
+  right: 18%;
+  top: 6%;
+  z-index: 10;
+}

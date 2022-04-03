@@ -11,6 +11,8 @@ export default function Nav() {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "20px 0px",
+        width: "75%",
+        margin: "auto",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
