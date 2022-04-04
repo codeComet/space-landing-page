@@ -1,5 +1,5 @@
 .discover-parent {
-  padding: 30px 0px;
+  padding: 30px 0px 90px;
 }
 
 .discover-parent h2 {
@@ -17,7 +17,6 @@
 
 .card-parent {
   background-color: #231e44 !important;
-  margin: 0px 15px;
   padding: 40px 30px;
   height: 280px;
 }

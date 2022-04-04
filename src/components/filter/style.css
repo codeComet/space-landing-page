@@ -1,0 +1,64 @@
+.filter-parent {
+  padding: 30px 10px;
+  background: #1e1b3a;
+}
+/* Filter bar */
+
+.filter-container {
+  width: 70%;
+  margin: 50px auto;
+  background: #2d2853;
+  padding: 6px 40px;
+  opacity: 0.6;
+  backdrop-filter: blur(45px);
+  height: 48px;
+  border-radius: 3px;
+}
+
+.filter-dropdown:first-child {
+  padding-right: 40px;
+  border-right: 1px solid #dadada;
+  height: 35px;
+}
+
+.filter-dropdown p {
+  color: #ababab;
+  margin-right: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-select::before,
+.filter-select::after {
+  border-color: #fff !important;
+}
+
+.filter-dropdown .MuiSelect-iconStandard {
+  color: #fff;
+}
+
+.filter-search {
+  border: 1px solid #dadada;
+  padding: 9px 15px;
+  background: #2d2853;
+  color: #ababab;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-search:focus {
+  outline: none;
+}
+
+.filter-searchBtn {
+  padding: 10px 40px;
+  background-color: #0e0d22;
+  border: 1px solid #6f6c83;
+  border-left: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-searchBtn:hover {
+  cursor: pointer;
+}
+
+/* Filter Bar */
