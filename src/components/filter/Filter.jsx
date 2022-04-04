@@ -1,26 +1,27 @@
 import React, { useState, useEffect } from "react";
-import {
-  Box,
-  Typography,
-  MenuItem,
-  Select,
-  FormControl,
-  TextField,
-} from "@mui/material";
+import { Box, Typography, MenuItem, Select, FormControl } from "@mui/material";
+import { CircularProgress } from "@mui/material";
+import FilterCard from "./FilterCard";
+import rocket from "../../assets/img/rocket3.png";
+import ufo from "../../assets/img/ufo.png";
+import solar from "../../assets/img/solar.png";
 import "./style.css";
 
-const SearchButton = () => {
-  return (
-    <div className="searchBtn">
-      <button>Search</button>
-    </div>
-  );
-};
-
-const Filter = () => {
+const Filter = ({ data }) => {
   const [upcoming, setUpcoming] = useState(true);
   const [year, setYear] = useState("2001 - 2005");
   const [searchValue, setSearchValue] = useState("");
+  const [apiData, setApiData] = useState([]);
+  const images = [rocket, ufo, solar];
+
+  const randomImage = () => {
+    const random = Math.floor(Math.random() * images.length);
+    return images[random];
+  };
+
+  useEffect(() => {
+    setApiData(data);
+  }, [data]);
 
   const handleUpcomingValueChange = (event) => {
     setUpcoming(event.target.value);
@@ -93,6 +94,32 @@ const Filter = () => {
           />
           <button className="filter-searchBtn">Search</button>
         </Box>
+      </Box>
+      {/* Filter Bar */}
+
+      {/* data fetching */}
+      <Box className="data-parent">
+        {apiData ? (
+          apiData.map((item) => {
+            <FilterCard
+              title={item?.mission_name}
+              img={randomImage()}
+              rocket={item?.rocket?.rocket_name}
+              launch={item?.launch_year}
+              upcoming={item?.upcoming}
+            />;
+          })
+        ) : (
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <CircularProgress style={{ color: "#fff" }} />
+          </Box>
+        )}
       </Box>
     </div>
   );

@@ -37,8 +37,3 @@
   width: 35% !important;
   margin: auto !important;
 }
-
-.center-card {
-  background: linear-gradient(95.48deg, #2317fa -1.25%, #d529e4 97.48%);
-  box-shadow: 6px 16px 31px 8px rgba(59, 88, 239, 0.15);
-}
