@@ -1,6 +1,7 @@
 .hero-parent {
   height: 88vh;
   position: relative;
+  background: #1e1b3a;
 }
 
 /* Absolute positioned images */
@@ -90,7 +91,7 @@
 }
 
 .welcome-header h1 {
-  font-size: 60px;
+  font-size: 65px;
   margin-bottom: 15px;
   color: #fff;
   font-family: "Russo One", sans-serif;

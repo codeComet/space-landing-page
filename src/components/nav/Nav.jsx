@@ -13,6 +13,7 @@ export default function Nav() {
         padding: "20px 0px",
         width: "75%",
         margin: "auto",
+        background: "#1e1b3a",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", flexGrow: 1 }}>
