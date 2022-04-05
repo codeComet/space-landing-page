@@ -12,7 +12,7 @@ const Discover = () => {
       <Typography variant="h2">Discover Universe</Typography>
       <Box
         sx={{
-          width: "75%",
+          width: "70%",
           margin: "auto",
           display: "flex",
           alignItems: "center",

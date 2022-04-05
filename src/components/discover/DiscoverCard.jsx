@@ -8,7 +8,7 @@ import "./style.css";
 
 export default function DiscoverCard({ title, img, description }) {
   return (
-    <Card sx={{ maxWidth: 300 }} className="card-parent">
+    <Card sx={{ maxWidth: 280, minHeight: "300px" }} className="card-parent">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -28,7 +28,11 @@ export default function DiscoverCard({ title, img, description }) {
           <Typography
             variant="body2"
             color="#DADADA"
-            style={{ textAlign: "center" }}
+            style={{
+              textAlign: "center",
+              fontSize: "14px",
+              lineHeight: "25px",
+            }}
           >
             {description}
           </Typography>

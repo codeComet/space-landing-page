@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Box, Typography, MenuItem, Select, FormControl } from "@mui/material";
 import { CircularProgress } from "@mui/material";
 import FilterCard from "./FilterCard";
-import rocket from "../../assets/img/rocket3.png";
-import ufo from "../../assets/img/ufo.png";
-import solar from "../../assets/img/solar.png";
 import PaginationModule from "./Pagination";
 import "./style.css";
 
@@ -16,12 +13,6 @@ const Filter = ({ data, loading }) => {
   const [backupData, setBackup] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(8);
-  const images = [rocket, ufo, solar];
-
-  const randomImage = () => {
-    const random = Math.floor(Math.random() * images.length);
-    return images[random];
-  };
 
   useEffect(() => {
     setApiData(data);
@@ -71,12 +62,14 @@ const Filter = ({ data, loading }) => {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     console.log(searchValue);
-    const backup = backupData.filter((item) => {
-      return (
-        item?.rocket.rocket_name.toLowerCase() == searchValue.toLowerCase()
-      );
-    });
-    setApiData(backup);
+    if (searchValue !== "") {
+      const backup = backupData.filter((item) => {
+        return (
+          item?.rocket.rocket_name.toLowerCase() == searchValue.toLowerCase()
+        );
+      });
+      setApiData(backup);
+    }
   };
 
   // Pagination handler
@@ -173,7 +166,6 @@ const Filter = ({ data, loading }) => {
               <div key={index}>
                 <FilterCard
                   title={item?.mission_name}
-                  img={randomImage()}
                   rocket={item?.rocket?.rocket_name}
                   launch={item?.launch_year}
                   upcoming={item?.upcoming}

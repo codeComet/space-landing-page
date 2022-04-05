@@ -4,6 +4,8 @@ import Nav from "./components/nav/Nav";
 import Hero from "./components/hero/Hero";
 import Discover from "./components/discover/Discover";
 import Filter from "./components/filter/Filter";
+import Newsletter from "./components/newsletter/Newsletter";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [data, setData] = useState([]);
@@ -27,6 +29,8 @@ function App() {
       <Hero />
       <Discover />
       <Filter data={data} loading={loading} />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

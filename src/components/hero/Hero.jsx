@@ -29,7 +29,7 @@ const Hero = () => {
             <img
               src={blueplanet}
               alt="img"
-              style={{ width: "40px", marginRight: "10px" }}
+              style={{ width: "60px", marginRight: "10px" }}
             />
             <Typography variant="body1">Welcome to Stella</Typography>
           </Box>
