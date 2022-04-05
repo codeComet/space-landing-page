@@ -8,7 +8,7 @@ import "./style.css";
 
 export default function FilterCard({ title, img, rocket, launch, upcoming }) {
   return (
-    <Card sx={{ maxWidth: 300 }} className="card-parent">
+    <Card sx={{ maxWidth: 190 }} className="card-parent">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -25,26 +25,14 @@ export default function FilterCard({ title, img, rocket, launch, upcoming }) {
           >
             {title}
           </Typography>
-          <Typography
-            variant="body2"
-            color="#DADADA"
-            style={{ textAlign: "center" }}
-          >
-            {rocket}
+          <Typography variant="body2" color="#DADADA" className="card-body">
+            Rocket Name: {rocket}
           </Typography>
-          <Typography
-            variant="body2"
-            color="#DADADA"
-            style={{ textAlign: "center" }}
-          >
-            {launch}
+          <Typography variant="body2" color="#DADADA" className="card-body">
+            Launch Year: {launch}
           </Typography>
-          <Typography
-            variant="body2"
-            color="#DADADA"
-            style={{ textAlign: "center" }}
-          >
-            {upcoming}
+          <Typography variant="body2" color="#DADADA" className="card-body">
+            Upcoming: {upcoming.toString()}
           </Typography>
         </CardContent>
       </CardActionArea>

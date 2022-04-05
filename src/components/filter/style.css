@@ -63,16 +63,21 @@
 
 /* Filter Bar */
 
-.data-parent {
+.data-container {
+  width: 75%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-parent {
   background-color: #231e44 !important;
-  padding: 40px 30px;
-  height: 280px;
+  padding: 30px;
+  min-height: 200px;
+  flex: 1 0 25%;
+  margin: 15px 0px;
 }
 
 .card-content {
@@ -90,4 +95,15 @@
 .card-media {
   width: 35% !important;
   margin: auto !important;
+}
+
+.card-body {
+  text-align: center;
+  font-family: "Inter", sans-serif !important;
+  margin-bottom: 5px !important;
+}
+
+.MuiPaginationItem-root {
+  margin-top: 30px !important;
+  color: #fff !important;
 }

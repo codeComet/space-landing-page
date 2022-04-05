@@ -7,15 +7,18 @@ import Filter from "./components/filter/Filter";
 
 function App() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
+    setLoading(true);
     const response = await axios.get("https://api.spacexdata.com/v3/launches");
     setData(response.data);
-    console.log(response.data);
+    setLoading(false);
+    // console.log(response.data);
   };
 
   return (
@@ -23,7 +26,7 @@ function App() {
       <Nav />
       <Hero />
       <Discover />
-      <Filter data={data} />
+      <Filter data={data} loading={loading} />
     </div>
   );
 }
