@@ -8,7 +8,13 @@ import "./style.css";
 
 export default function DiscoverCard({ title, img, description }) {
   return (
-    <Card sx={{ maxWidth: 280, minHeight: "300px" }} className="card-parent">
+    <Card
+      sx={{
+        maxWidth: { lg: 280, md: 280, sm: 200, xs: 200 },
+        minHeight: "330px",
+      }}
+      className="card-parent"
+    >
       <CardActionArea>
         <CardMedia
           component="img"

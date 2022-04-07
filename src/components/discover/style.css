@@ -18,11 +18,11 @@
 .card-parent {
   background-color: #231e44 !important;
   padding: 40px 30px;
-  height: 280px;
 }
 
 .card-content {
   margin-top: 10px;
+  padding-bottom: 30px;
 }
 
 .card-title {
@@ -36,4 +36,21 @@
 .card-media {
   width: 35% !important;
   margin: auto !important;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card-parent {
+    flex: none !important;
+  }
+
+  .discover-parent h2 {
+    font-size: 30px;
+    margin: 20px auto 20px;
+  }
 }

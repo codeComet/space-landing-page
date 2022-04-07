@@ -113,3 +113,35 @@
 .Mui-selected {
   color: #fff !important;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .filter-container {
+    height: auto;
+    width: 70%;
+    margin: auto;
+  }
+
+  .filter-dropdown:first-child {
+    padding-right: 0px;
+    border-right: none;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .filter-search {
+    width: 88%;
+    margin-bottom: 10px;
+  }
+
+  .filter-searchBtn {
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #6f6c83;
+  }
+
+  .data-container {
+    justify-content: space-around;
+  }
+}

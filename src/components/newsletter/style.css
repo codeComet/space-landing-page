@@ -48,3 +48,19 @@
 .newsletter-btn:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .newsletter-parent h2 {
+    font-size: 30px;
+    margin-bottom: 3rem;
+  }
+
+  .newsletter-field {
+    width: 78%;
+    margin: 0px auto 20px;
+  }
+
+  .newsletter-btn {
+    padding: 8px 20px;
+  }
+}

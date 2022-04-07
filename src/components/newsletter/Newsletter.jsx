@@ -7,7 +7,11 @@ const Newsletter = () => {
     <div className="newsletter-parent">
       <Typography variant="h2">Newsletter</Typography>
       <Box
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+        sx={{
+          display: { lg: "flex", md: "flex", sm: "block", xs: "block" },
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
         <input
           type="text"

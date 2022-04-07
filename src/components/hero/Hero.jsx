@@ -24,7 +24,7 @@ const Hero = () => {
       <img src={comet} alt="comet.png" className="cometpng" />
       {/* Absolute positioned images */}
       <div className="hero-container">
-        <div className="hero-text" style={{ paddingTop: "70px" }}>
+        <div className="hero-text">
           <Box className="welcome-text">
             <img
               src={blueplanet}

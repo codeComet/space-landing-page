@@ -1,0 +1,29 @@
+.mid-icon {
+  margin: 0px 30px;
+}
+
+.logo-footer {
+  width: 50%;
+}
+
+.footer-container h5 {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .mid-icon {
+    margin: 0px 10px;
+  }
+
+  .socials img {
+    width: 20%;
+  }
+
+  .logo-footer {
+    width: 27%;
+  }
+
+  .footer-container h5 {
+    font-size: 12px;
+  }
+}

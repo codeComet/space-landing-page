@@ -79,7 +79,7 @@ const Filter = ({ data, loading }) => {
 
   const paginate = (e, value) => {
     setCurrentPage(value);
-    console.log(value);
+    //console.log(value);
   };
 
   return (
@@ -87,15 +87,24 @@ const Filter = ({ data, loading }) => {
       {/* Filter bar */}
       <Box
         sx={{
-          display: "flex",
+          display: { lg: "flex", md: "flex", sm: "block" },
           alignItems: "center",
           justifyContent: "space-between",
         }}
         className="filter-container"
       >
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box
+          sx={{
+            display: { lg: "flex", md: "flex", sm: "block" },
+            alignItems: "center",
+          }}
+        >
           <Box
-            sx={{ display: "flex", alignItems: "center" }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: { xs: "space-between", sm: "space-between" },
+            }}
             className="filter-dropdown"
           >
             <Typography variant="body1">Is upcoming?</Typography>
@@ -112,7 +121,13 @@ const Filter = ({ data, loading }) => {
             </FormControl>
           </Box>
           <Box
-            sx={{ display: "flex", alignItems: "center", paddingLeft: "40px" }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: { xs: "space-between", sm: "space-between" },
+              paddingLeft: { lg: "40px", md: "40px", sm: "0px", xs: "0px" },
+              marginBottom: { xs: "10px", sm: "10px" },
+            }}
             className="filter-dropdown"
           >
             <Typography variant="body1">Launch Year?</Typography>
