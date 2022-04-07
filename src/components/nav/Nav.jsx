@@ -27,7 +27,7 @@ export default function Nav() {
           alignItems: "center",
           justifyContent: "space-between",
           padding: "20px 0px",
-          width: "70%",
+          width: { lg: "70%", md: "74%", xs: "75%" },
           margin: "auto",
         }}
       >
@@ -62,7 +62,7 @@ export default function Nav() {
 
           position: "absolute",
           top: "20px",
-          right: "20px",
+          right: "30px",
         }}
       >
         <TemporaryDrawer open={open} setOpen={setOpen} />
@@ -136,7 +136,7 @@ function TemporaryDrawer({ setOpen }) {
             src={menu}
             alt="menu"
             onClick={toggleDrawer("right", true)}
-            style={{ width: "40%" }}
+            style={{ width: "35%" }}
           />
         </Box>
 

@@ -43,6 +43,7 @@
 @media screen and (max-width: 600px) {
   .card-container {
     flex-wrap: wrap;
+    justify-content: center !important;
   }
 
   .card-parent {

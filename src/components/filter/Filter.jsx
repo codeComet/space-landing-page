@@ -173,7 +173,9 @@ const Filter = ({ data, loading }) => {
       <Box className="data-parent">
         <Box className="data-container">
           {loading ? (
-            <Box sx={{ width: "100%", margin: "auto", textAlign: "center" }}>
+            <Box
+              sx={{ width: "100%", margin: "20px auto", textAlign: "center" }}
+            >
               <CircularProgress />
             </Box>
           ) : currentCards.length !== 0 ? (

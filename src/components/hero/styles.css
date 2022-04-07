@@ -142,6 +142,9 @@
 /* Responsive CSS */
 
 @media screen and (max-width: 600px) {
+  .hero-parent {
+    min-height: 65vh;
+  }
   .welcome-text {
     width: 90%;
   }
@@ -214,5 +217,104 @@
     width: 13%;
     top: 3%;
     right: 30%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .welcome-text {
+    width: 50%;
+  }
+
+  .hero-text {
+    padding-top: 0px;
+  }
+
+  .welcome-text img {
+    width: 40px;
+  }
+
+  .welcome-header {
+    width: 70%;
+  }
+
+  .welcome-header h1 {
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .welcome-header p {
+    width: 80%;
+    margin-bottom: 44px;
+    font-size: 17px;
+  }
+
+  .welcome-btn button {
+    padding: 25px 45px;
+  }
+
+  .astronaut {
+    width: 50%;
+    right: 3%;
+    top: 9%;
+  }
+
+  .boxpng {
+    width: 12%;
+    left: 10px;
+    top: 15%;
+  }
+
+  .planetbg {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 60%;
+  }
+
+  .donutpng {
+    bottom: 8%;
+    width: 13%;
+  }
+
+  .planetpng {
+    right: 2%;
+    bottom: 61%;
+    width: 12%;
+  }
+
+  .vectorpng {
+    position: absolute;
+    right: 22%;
+    top: 29%;
+    width: 35%;
+  }
+
+  .cometpng {
+    width: 13%;
+    top: 0;
+    right: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .welcome-text {
+    width: 35%;
+  }
+
+  .welcome-header h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  .astronaut {
+    width: 45%;
+    right: 5%;
+    top: 11.5%;
+  }
+
+  .planetpng {
+    right: 2%;
+    bottom: 52%;
+    width: 12%;
   }
 }
