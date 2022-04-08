@@ -12,11 +12,16 @@ const Discover = () => {
       <Typography variant="h2">Discover Universe</Typography>
       <Box
         sx={{
-          width: "70%",
+          width: { lg: "70%", md: "95%", sm: "100%", xs: "100%" },
           margin: "auto",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: {
+            lg: "space-between",
+            md: "space-around",
+            sm: "space-around",
+            xs: "space-around",
+          },
         }}
         className="card-container"
       >

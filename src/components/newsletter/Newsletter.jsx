@@ -9,6 +9,7 @@ const Newsletter = () => {
       <Box
         sx={{
           display: { lg: "flex", md: "flex", sm: "block", xs: "block" },
+          textAlign: { sm: "center" },
           alignItems: "center",
           justifyContent: "center",
         }}

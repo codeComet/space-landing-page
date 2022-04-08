@@ -153,8 +153,13 @@ const Filter = ({ data, loading }) => {
             </FormControl>
           </Box>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <form onSubmit={handleSearchSubmit}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <form onSubmit={handleSearchSubmit} className="filter-form">
             <input
               type="text"
               placeholder="Search for rocket"

@@ -10,8 +10,8 @@ export default function DiscoverCard({ title, img, description }) {
   return (
     <Card
       sx={{
-        maxWidth: { lg: 280, md: 280, sm: 200, xs: 200 },
-        minHeight: "330px",
+        maxWidth: { lg: 300, md: 280, sm: 200, xs: 200 },
+        maxHeight: "330px",
       }}
       className="card-parent"
     >
@@ -20,7 +20,7 @@ export default function DiscoverCard({ title, img, description }) {
           component="img"
           image={img}
           alt="card"
-          className="card-media"
+          className="discover-card-media"
         />
         <CardContent className="card-content">
           <Typography
