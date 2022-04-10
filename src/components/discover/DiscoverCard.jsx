@@ -10,7 +10,7 @@ export default function DiscoverCard({ title, img, description }) {
   return (
     <Card
       sx={{
-        maxWidth: { lg: 300, md: 280, sm: 200, xs: 200 },
+        maxWidth: { lg: 285, md: 280, sm: 200, xs: 200 },
         maxHeight: "330px",
       }}
       className="card-parent"
